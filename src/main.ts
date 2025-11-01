@@ -1,5 +1,5 @@
 import { LiteAPI } from "liteapi-map-sdk";
-import "../node_modules/liteapi-map-sdk/dist/liteapi-map-sdk.css";
+import "liteapi-map-sdk/dist/liteapi-map-sdk.css";
 
 LiteAPI.Map.init({
   placeId: "ChIJYeZuBI9YwokRjMDs_IEyCwo",
