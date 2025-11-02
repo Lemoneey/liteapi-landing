@@ -14,7 +14,7 @@
       }
 
       body {
-        background: linear-gradient(180deg, #f3e8ff 0%, #e0c3fc 100%);
+        background: white;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -25,7 +25,12 @@
       header {
         width: 100%;
         padding: 2rem 1rem;
-        background-color: #7f00ff;
+        background: radial-gradient(
+            75.14% 80.33% at 50% -30.33%,
+            #432b79 0%,
+            rgba(13, 5, 32, 0) 100%
+          ),
+          #0a041a;
         text-align: center;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       }
@@ -56,7 +61,7 @@
 
       .cta {
         margin-top: 1rem;
-        background-color: #9b30ff;
+        background: #e03b0d;
         padding: 0.75rem 1.5rem;
         border: none;
         border-radius: 8px;
@@ -68,7 +73,17 @@
       }
 
       .cta:hover {
-        background-color: #7f00ff;
+        background: #e64b20;
+      }
+
+      .toggle-button {
+        margin-top: 0;
+        background: rgb(28 12 69/1);
+        padding: 0.45rem 1rem;
+      }
+
+      .toggle-button:hover {
+        background: #3b2171;
       }
 
       footer {
@@ -86,8 +101,14 @@
     </header>
 
     <main>
-      <div id="app" class="app"></div>
+      <div id="app1" class="app"></div>
+      <button id="toggleHeatmap1" class="cta toggle-button">
+        Toggle Heatmap
+      </button>
       <div id="app2" class="app"></div>
+      <button id="toggleHeatmap2" class="cta toggle-button">
+        Toggle Heatmap
+      </button>
 
       <a
         href="https://www.npmjs.com/package/liteapi-map-sdk"
@@ -98,7 +119,7 @@
       </a>
     </main>
 
-    <footer>© 2025 LiteAPI SDK. All rights reserved.</footer>
+    <footer>© 2025 LiteAPI SDK.</footer>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
